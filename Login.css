@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-image: url("https://t3.ftcdn.net/jpg/08/50/60/62/360_F_850606230_ojKme6DT6pdRMySZCdohF1ulRnb2V0Ty.jpg");
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    align-self:flex-start;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+header .logo img:hover {
+    transform: scale(1.5);
+}
+
+header h1 {
+    margin: 0;
+    color: #000000;
+    align-self: auto;
+   
+}
+
+nav ul {
+    list-style:circle;
+    margin:0;
+    padding:0;
+    display: flex;
+    gap: 3.5rem;
+}
+
+nav a {
+    font:message-box;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-weight:lighter;
+}
+
+nav a:hover {
+    color:rgb(41, 43, 44);
+    background-color: #64d1e2;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.hero {
+    
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-fresh-and-technological-sense-real-estate-advertising-background-techlightblue-backgroundadvertising-backgroundpropertylight-image_69710.jpg");
+    background-size:cover;
+    text-align: center;
+    color: #e74c3c;
+}
+form{
+    box-sizing:content-box;
+    justify-content: center;
+    font-size: 30px;
+    color: #00BCD4;
+    margin-top: 150px;
+    margin-left: 600px;
+    padding-left: 30px;
+    border-radius: 10px;
+    box-shadow: 7px 10px 10px grey;
+    width: 400px;
+    height: 300px;
+
+}
+h2{
+    text-align: center;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+td{
+    align-items: center;
+    padding: 7px;
+}
+.input{
+    
+    padding: 7px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 1px 1px 9px snow;
+ 
+}
+.input:hover{
+    border-color: #a63c06;
+}
+.input:focus {
+    border-color: #00BCD4;
+    outline: none;
+}
+.login{
+    text-align: center;
+    padding: 10px;
+    box-sizing: content-box;
+}
+.login input{
+    background-color: #b69392;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 8px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 1.8s;
+    transition: color 0.5s;
+}
+.login input:hover{
+  background-color: rgb(156, 68, 68);
+  font-size: 17px; 
+  color: #ffffff;
+}
+footer {
+    background-image: url("https://t3.ftcdn.net/jpg/08/50/60/62/360_F_850606230_ojKme6DT6pdRMySZCdohF1ulRnb2V0Ty.jpg");
+    background-color: var(--primary-color);
+    color:#000000;
+    text-align: center;
+    justify-content: baseline;
+    padding: 1rem;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-top: 10px;
+    margin: 10px;
+}

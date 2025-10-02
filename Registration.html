@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="Registration.css" />
+    <script>
+        function validation() {
+            let name = document.getElementById("fullName").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let mobno = document.getElementById("mobNo").value.trim();
+            let address = document.getElementById("address").value.trim();
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value.trim();
+
+            const namePattern = /^[a-zA-Z]{2,}$/;
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const mobNoPattern = /^[6-9]\d{9}$/;
+            const addressPattern = /^[a-zA-Z0-9\s,.-]{10,100}$/;
+            const usernamePattern = /^[a-zA-Z][a-zA-Z0-9_]{2,15}$/;
+            const passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,20}$/;
+
+            // Name validation
+            if (!namePattern.test(name)) {
+                alert("Please enter a valid name (At least 2 characters, only alphabets).");
+                return false;
+            }
+
+            // Email validation
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email.");
+                return false;
+            }
+
+            // Mobile number validation
+            if (!mobNoPattern.test(mobno)) {
+                alert("Please enter a valid mobile number (10 digits, starting with 6-9).");
+                return false;
+            }
+
+            // Address validation
+            if (!addressPattern.test(address)) {
+                alert("Please enter a valid address (10-100 characters).");
+                return false;
+            }
+
+            // Username validation
+            if (!usernamePattern.test(username)) {
+                alert("Please enter a valid username (3-15 characters, starts with a letter, and may include underscores).");
+                return false;
+            }
+
+            // Password validation
+            if (!passwordPattern.test(password)) {
+                alert("Password must be 8-20 characters long and include:\n- At least one uppercase letter\n- At least one lowercase letter\n- At least one number\n- At least one special character (@#$%^&+=!)");
+                return false;
+            }
+
+            alert("All inputs are valid. Form submitted successfully!");
+            return true; // If all validations pass
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="Home.html"><img src="image/logo.webp" alt="Logo"></a>
+            <h1>Dream Homes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="About.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="formlayout" onsubmit="return validation()">
+        <h2>User Registration</h2>
+        <table>
+            <tr>
+                <th><label for="fullName">Full Name:</label></th>
+                <td>
+                    <input type="text" id="fullName" name="fullName" class="inp" placeholder="Enter Your Full Name"
+                        title="Name must contain only letters and spaces, and be at least 2 characters long." required>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="DOB">Date Of Birth:</label></th>
+                <td>
+                    <input class="inp" type="date" id="DOB" placeholder="Enter Your DOB"
+                        title="Select your Date of Birth." required>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="gender">Gender:</label></th>
+                <td>
+                    <div id="radio">
+                        <label><input type="radio" id="male" name="gender" value="male" required> Male</label>&nbsp;
+                        <label><input type="radio" id="female" name="gender" value="female"> Female</label>&nbsp;
+                        <label><input type="radio" id="other" name="gender" value="other"> Other</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <td>
+                    <input class="inp" type="text" id="email" name="email" placeholder="Enter Your Email"
+                        title="Please enter a valid email address (e.g., user@example.com)" required>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="mobNo">Mobile No:</label></th>
+                <td>
+                    <input class="inp" type="text" id="mobNo" name="mobNo" placeholder="Enter Your Mobile No"
+                        title="Enter valid Mobile Number" required>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="address">Address:</label></th>
+                <td>
+                    <input class="inp" type="text" name="address" id="address" placeholder="Enter Your Address"
+                        title="Address must be between 10 to 100 characters." required>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="username">Username:</label></th>
+                <td>
+                    <input class="inp" type="text" name="username" id="username" placeholder="Enter Username"
+                        title="Please Enter a valid Username" required>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="password">Password:</label></th>
+                <td>
+                    <input class="inp" type="password" name="password" id="password" placeholder="Enter Password"
+                        title="Password must be strong" required>
+                </td>
+            </tr>
+        </table>
+        <div class="submitbutton">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Dream Homes. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:patilsushil794@gmail.com">patilsushil794@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>

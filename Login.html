@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="Login.css" />
+</head>
+<header>
+  <div class="logo">
+    <a href="Home.html"><img src="image\logo.webp" alt="Logo"></a>
+    <h1>Dream Homes</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Registration.html">Registration</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="About.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body class="hero">
+
+  <form action="#" method="post">
+    <h2>User Login</h2>
+    <table>
+      <tr>
+        <th>
+          <label for="username">UserName : </label>
+        </th>
+        <td>
+          <input class="input" type="text" name="username" id="username" placeholder="Enter your username"
+            pattern="^[a-zA-Z][a-zA-Z0-9_]{2,15}$" title="Please Enter a valid UserName" required>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="password">Password : </label>
+        </th>
+        <td>
+          <input class="input" type="text" name="password" id="password" placeholder="Enter your password"
+            pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,20}$" title="Password must be Strong" required>
+        </td>
+      </tr>
+    </table>
+    <div class="login">
+      <input type="submit" name="login" id="login" value="Login">
+    </div>
+
+  </form>
+  <footer>
+    <p>&copy; 2024 Dream Homes. All rights reserved.</p>
+    <p>
+    <p>Contact us at: <a href="mailto:patilsushil794@gmail.com">patilsushil794@gmail.com</a></p>
+    </p>
+  </footer>
+
+</body>
+
+</html>

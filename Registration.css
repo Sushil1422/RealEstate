@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-fresh-and-technological-sense-real-estate-advertising-background-techlightblue-backgroundadvertising-backgroundpropertylight-image_69710.jpg");
+    background-size: cover;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-image: url("https://t3.ftcdn.net/jpg/08/50/60/62/360_F_850606230_ojKme6DT6pdRMySZCdohF1ulRnb2V0Ty.jpg");
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    align-self:flex-start;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+header .logo img:hover {
+    transform: scale(1.5);
+}
+
+header h1 {
+    margin: 0;
+    color: #000000;
+    align-self: auto;
+   
+}
+
+nav ul {
+    list-style:circle;
+    margin:0;
+    padding:0;
+    display: flex;
+    gap: 3.5rem;
+}
+
+.formlayout{
+    color: #64d1e2;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 550px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 7px 10px 10px grey;
+    width: 500px;
+}
+h2{
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+    color:  #cec0c0;;
+}
+td{
+    padding: 5px ;
+}
+.inp{
+    padding: 7px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 1px 1px 9px snow;
+   
+    
+}
+.inp:hover{
+    transform: scale(1.3);
+    border-color: #a63c06;
+}
+.inp:focus {
+    border-color: #00BCD4;  /* Dark border color on focus */
+    outline: none; 
+}
+#radio{
+    border: 1px solid  none;
+    padding: 7px;
+    width: 100%;
+    align-content: space-around;
+}
+#radio input{
+     border: 1px solid black;
+}
+.submitbutton{
+    text-align: center;
+    padding: 10px;
+
+}
+.submitbutton input{
+    border-radius: 6px;
+    background-color: #D32F2F;
+    padding: 8px;
+    width: 120px;
+    color: #fff;
+    font-size: 15px;
+    
+}
+.submitbutton input:hover{
+    background-color: #fe1c18;
+    transform: scale(1.3);
+
+}
+
+nav a {
+    font:message-box;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-weight:lighter;
+}
+
+nav a:hover {
+    color:rgb(41, 43, 44);
+    background-color: #64d1e2;
+    border-radius: 10px;
+    font-size: 20px;
+}         
+footer {
+    background-image: url("https://t3.ftcdn.net/jpg/08/50/60/62/360_F_850606230_ojKme6DT6pdRMySZCdohF1ulRnb2V0Ty.jpg");
+    background-color: var(--primary-color);
+    color:#000000;
+    text-align: center;
+    justify-content: baseline;
+    padding: 1rem;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-top: 10px;
+    margin: 10px;
+}
