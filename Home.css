@@ -218,3 +218,77 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* ======================== */
+/* RESPONSIVE DESIGN BELOW  */
+/* ======================== */
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-box input {
+    width: 250px; /* shrink input box for tablets */
+  }
+
+  .features {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+  }
+
+  .feature {
+    width: 80%;  /* keeps it neat instead of full stretch */
+  }
+}
+
+/* Phone adjustments */
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem; 
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .search-box input {
+    width: 90%; /* full width search bar */
+    max-width: 300px;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  .features-heading {
+    font-size: 1.2rem;
+    padding: 8px 20px;
+  }
+
+  .feature {
+    width: 95%;
+    transform: none !important; /* prevent giant hover zoom on tiny screens */
+  }
+}
